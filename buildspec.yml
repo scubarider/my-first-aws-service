@@ -32,15 +32,15 @@ phases:
       - printf '[{"name":"cicd-container", "imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
       - cat imagedefinitions.json
 
-  artifacts:
-    files:
-      - '**/*'
-      - imagedefinitions.json
-    base-directory: './target'
+
+artifacts:
+  files:
+    - '**/*'
+    - imagedefinitions.json
+  base-directory: './target'
 
 
-  #reports: #see video 1 @18:10
-  #  test-report-group: #junit reports
-  #    files:
-  #      - test-
-
+#reports: #see video 1 @18:10
+#  test-report-group: #junit reports
+#    files:
+#      - test-

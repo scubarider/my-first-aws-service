@@ -13,7 +13,4 @@ public class Result {
     this.mathResult = mathResult;
     this.message = message;
   }
-
-
-
 }
